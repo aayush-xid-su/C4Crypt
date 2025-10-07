@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayush Das">
+    <meta name="description" content="Free encryption tool for encrypt your message">
+    <title>ChessCrypt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="owner-photo">
+            <img src="/assets/logo.png" alt="ayush">
+        </div>
+        <div>
+            <h1>C4Crypt</h1>
+            <p>Convert your message into the order of chess move sequences</p>
+            <div class="decpt">
+                <a href="https://en.wikipedia.org/wiki/Chaturanga" target="_blank">"C4" for Chaturanga’s four divisions</a>
+            </div>
+        </div>
+        <div class="top-right">
+            <a href="https://ayush11profile.netlify.app/" target="_blank">Made by Aayush</a><br>
+            <a href="https://github.com/aayush-xid-su" target="_blank">Github</a>
+        </div>
+    </header>
+    <div class="controls">
+        <div class="toggle">
+            <button id="encode-btn" class="active">Encode</button>
+            <button id="decode-btn">Decode</button>
+        </div>
+        <div class="key-section">
+            <label>
+                <input type="checkbox" id="use-key"> Use encryption key
+            </label>
+            <input type="text" id="key-input" placeholder="Enter encryption key" disabled>
+        </div>
+    </div>
+    <div id="input-section">
+        <textarea id="input-text" placeholder="Type your message here"></textarea>
+        <p>Allowed characters: a-z A-Z 0-9 space .</p>
+        <div id="validation-message"></div>
+    </div>
+    <div id="output-section">
+        <h3>Output</h3>
+        <textarea id="output-text" readonly></textarea>
+        <button id="copy-btn">Copy</button>
+        <button id="download-btn">Download</button>
+        <button id="clear-btn">Clear</button>
+    </div>
+    <div id="chessboard"></div>
+    <div id="drag-ghost">♟</div>
+    <footer>
+        Made with ❤️ by Aayush and xidotic pvt. Ltd <br> 
+        &copy; All rights reserved 2025
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
